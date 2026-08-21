@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "@/components/Header";
 import { CONFIG } from "@/config";
+import { LOGO_ASCII } from "./logo-ascii";
 
 const projects = [
   {
@@ -61,6 +62,12 @@ export default function Home() {
           className="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-24 pb-12 relative overflow-hidden"
         >
           <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-100 via-body to-body" />
+          <pre
+            aria-hidden
+            className="absolute inset-0 -z-10 flex items-center justify-center text-[6px] sm:text-[9px] md:text-xs leading-[1.1] font-mono text-slate-400/30 select-none pointer-events-none overflow-hidden"
+          >
+            {LOGO_ASCII}
+          </pre>
 
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-slate-200 text-slate-600 text-xs font-semibold tracking-wider uppercase shadow-sm">
