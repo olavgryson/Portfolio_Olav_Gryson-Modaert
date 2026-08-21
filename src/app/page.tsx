@@ -64,7 +64,7 @@ export default function Home() {
           <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-100 via-body to-body" />
           <pre
             aria-hidden
-            className="absolute inset-0 -z-10 flex items-center justify-center text-[6px] sm:text-[9px] md:text-xs leading-[1.1] font-mono text-slate-400/30 select-none pointer-events-none overflow-hidden"
+            className="absolute inset-y-0 right-0 -z-10 flex items-center justify-center text-[6px] sm:text-[9px] md:text-xs leading-[1.1] font-mono text-slate-400/30 select-none pointer-events-none overflow-hidden"
           >
             {LOGO_ASCII}
           </pre>
